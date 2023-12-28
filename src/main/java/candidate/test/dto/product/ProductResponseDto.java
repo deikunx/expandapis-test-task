@@ -9,7 +9,7 @@ public class ProductResponseDto {
 
     private Long id;
 
-    @JsonFormat(pattern="yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
     private LocalDate entryDate;
 
     private String itemCode;

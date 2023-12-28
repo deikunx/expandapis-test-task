@@ -12,7 +12,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class ProductRequestDto {
 
-    @JsonFormat(pattern="yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
     private LocalDate entryDate;
 
     @NotBlank

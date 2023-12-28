@@ -1,6 +1,5 @@
 package candidate.test.config;
 
-
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.NullValueCheckStrategy;
 
