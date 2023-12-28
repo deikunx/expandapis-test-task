@@ -1,7 +1,10 @@
 package candidate.test.controller;
 
+import candidate.test.dto.UserLoginRequestDto;
+import candidate.test.dto.UserLoginResponseDto;
 import candidate.test.dto.UserRegistrationRequestDto;
 import candidate.test.dto.UserRegistrationResponseDto;
+import candidate.test.security.AuthenticationService;
 import candidate.test.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -17,10 +20,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
+    private final AuthenticationService authenticationService;
 
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.OK)
     UserRegistrationResponseDto add(@RequestBody @Valid UserRegistrationRequestDto request) {
         return userService.add(request);
+    }
+
+    @PostMapping("/login")
+    @ResponseStatus(HttpStatus.OK)
+    public UserLoginResponseDto login(@RequestBody UserLoginRequestDto request) {
+        return authenticationService.authenticate(request);
     }
 }
