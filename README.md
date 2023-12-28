@@ -126,3 +126,8 @@ jwt.secretString=your_secret_string
     }
   ```
 * __Authentication__: Required
+
+## Tests
+
+ Integration tests cover 100% of the application
+![img.png](img.png)
