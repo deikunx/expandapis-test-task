@@ -19,7 +19,7 @@ public class Product {
     private Long id;
 
     @Column(name = "entry_date", nullable = false)
-    private String entryDate;
+    private LocalDate entryDate;
 
     @Column(name = "item_code", nullable = false)
     private String itemCode;

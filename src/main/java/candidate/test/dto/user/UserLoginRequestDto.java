@@ -1,11 +1,12 @@
 package candidate.test.dto.user;
 
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Data
+@Accessors(chain = true)
 public class UserLoginRequestDto {
+
     private String username;
 
     private String password;

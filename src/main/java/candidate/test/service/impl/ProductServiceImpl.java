@@ -17,7 +17,6 @@ public class ProductServiceImpl implements ProductService {
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;
 
-
     @Override
     public void add(RecordRequestDto requestDto) {
         List<Product> productList = requestDto.records().stream()

@@ -23,7 +23,7 @@ public class UserController {
     private final AuthenticationService authenticationService;
 
     @PostMapping("/add")
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.CREATED)
     UserRegistrationResponseDto add(@RequestBody @Valid UserRegistrationRequestDto request) {
         return userService.add(request);
     }

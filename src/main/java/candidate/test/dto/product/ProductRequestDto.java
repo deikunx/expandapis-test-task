@@ -6,11 +6,13 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Data
+@Accessors(chain = true)
 public class ProductRequestDto {
 
-    @JsonFormat(pattern="dd-MM-yyyy", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern="yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
     private LocalDate entryDate;
 
     @NotBlank
