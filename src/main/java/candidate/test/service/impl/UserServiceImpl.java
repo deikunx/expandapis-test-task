@@ -1,7 +1,7 @@
 package candidate.test.service.impl;
 
-import candidate.test.dto.UserRegistrationRequestDto;
-import candidate.test.dto.UserRegistrationResponseDto;
+import candidate.test.dto.user.UserRegistrationRequestDto;
+import candidate.test.dto.user.UserRegistrationResponseDto;
 import candidate.test.exception.UserAlreadyExistException;
 import candidate.test.mapper.UserMapper;
 import candidate.test.model.User;

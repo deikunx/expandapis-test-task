@@ -1,7 +1,7 @@
 package candidate.test.security;
 
-import candidate.test.dto.UserLoginRequestDto;
-import candidate.test.dto.UserLoginResponseDto;
+import candidate.test.dto.user.UserLoginRequestDto;
+import candidate.test.dto.user.UserLoginResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

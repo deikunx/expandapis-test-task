@@ -1,4 +1,4 @@
-package candidate.test.dto;
+package candidate.test.dto.user;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

@@ -1,4 +1,4 @@
-package candidate.test.dto;
+package candidate.test.dto.user;
 
 import candidate.test.validation.FieldMatch;
 import jakarta.validation.constraints.NotBlank;

@@ -1,7 +1,7 @@
 package candidate.test.mapper;
 
 import candidate.test.config.MapperConfig;
-import candidate.test.dto.UserRegistrationResponseDto;
+import candidate.test.dto.user.UserRegistrationResponseDto;
 import candidate.test.model.User;
 import org.mapstruct.Mapper;
 

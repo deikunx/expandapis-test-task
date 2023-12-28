@@ -1,9 +1,9 @@
 package candidate.test.controller;
 
-import candidate.test.dto.UserLoginRequestDto;
-import candidate.test.dto.UserLoginResponseDto;
-import candidate.test.dto.UserRegistrationRequestDto;
-import candidate.test.dto.UserRegistrationResponseDto;
+import candidate.test.dto.user.UserLoginRequestDto;
+import candidate.test.dto.user.UserLoginResponseDto;
+import candidate.test.dto.user.UserRegistrationRequestDto;
+import candidate.test.dto.user.UserRegistrationResponseDto;
 import candidate.test.security.AuthenticationService;
 import candidate.test.service.UserService;
 import jakarta.validation.Valid;
@@ -28,7 +28,7 @@ public class UserController {
         return userService.add(request);
     }
 
-    @PostMapping("/login")
+    @PostMapping("/authenticate")
     @ResponseStatus(HttpStatus.OK)
     public UserLoginResponseDto login(@RequestBody UserLoginRequestDto request) {
         return authenticationService.authenticate(request);
